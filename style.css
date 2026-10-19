@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #202938;
+  background: #f3f6fb;
+}
+
+.container {
+  width: min(900px, 92%);
+  margin: 40px auto;
+}
+
+header,
+section {
+  padding: 24px;
+  margin-bottom: 24px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgb(0 0 0 / 6%);
+}
+
+h1 {
+  margin-top: 0;
+  color: #2547a5;
+}
+
+label {
+  display: block;
+  margin-top: 14px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  padding: 11px;
+  font: inherit;
+  border: 1px solid #b8c1d1;
+  border-radius: 6px;
+}
+
+button {
+  margin-top: 16px;
+  padding: 10px 16px;
+  color: white;
+  background: #2547a5;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  background: #18347d;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+#status {
+  padding: 10px;
+  border-radius: 6px;
+  background: #edf0f5;
+}
+
+#status.success {
+  color: #176b35;
+  background: #e5f7eb;
+}
+
+#status.error {
+  color: #a32121;
+  background: #fde8e8;
+}
+
+#notes-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.note {
+  padding: 16px;
+  margin: 12px 0;
+  border: 1px solid #dce2ec;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+}
+
+.note h3 {
+  margin-top: 0;
+}
+
+.note p {
+  white-space: pre-wrap;
+}
+
+.note .note-id {
+  color: #5c6678;
+  font-size: 0.85rem;
+}
+
+.delete-btn {
+  background: #a32121;
+}
